@@ -46,6 +46,11 @@ export const job = defineType({
       title: 'Starting Date'
     }),
     defineField({
+      name: 'job_url',
+      type: 'url',
+      title: 'Link'
+    }),
+    defineField({
       name: 'job_end_date',
       type: 'date',
       title: 'End Date',
@@ -53,7 +58,8 @@ export const job = defineType({
     }),
     defineField({
       name: 'job_summary',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }, { type: 'image' }],
       title: 'Position Summary'
     }),
     defineField({
@@ -73,7 +79,8 @@ export const job = defineType({
     }),
     defineField({
       name: 'job_text',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }, { type: 'image' }],
       title: 'Main Text'
     }),
   ]
