@@ -43,18 +43,28 @@ export const job = defineType({
     defineField({
       name: 'job_start_date',
       type: 'date',
-      title: 'Starting Date'
-    }),
-    defineField({
-      name: 'job_url',
-      type: 'url',
-      title: 'Link'
+      title: 'Starting Date',
+      options: {
+        dateFormat: 'yyyy-MM'
+      }
     }),
     defineField({
       name: 'job_end_date',
       type: 'date',
       title: 'End Date',
+      options: {
+        dateFormat: 'yyyy-MM'
+      },
       hidden: ({ parent }: any) => parent.job_is_current
+    }),
+    defineField({
+      name: 'job_url',
+      type: 'array',
+      of: [{ type: 'link'}],
+      options: {
+        layout: 'grid',
+      },
+      title: 'Link'
     }),
     defineField({
       name: 'job_summary',

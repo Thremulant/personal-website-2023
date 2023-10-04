@@ -19,5 +19,10 @@ export const social = defineType({
       type: 'image',
       title: 'Logo'
     }),
+    defineField({
+      name: 'social_visible',
+      type: 'boolean',
+      title: 'Visible'
+    }),
   ]
 })
