@@ -1,10 +1,7 @@
 function App() {
   return (
     <>
-      <div className="uk-inline">
-        <button className="uk-button uk-button-default" type="button">Hover</button>
-        <div data-uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-      </div>
+      <h1 className="text-white text-9xl font-neue font-bold w-screen">DANIEL <span className="text-outline-white">PESCADOR</span></h1>
     </>
   )
 }
