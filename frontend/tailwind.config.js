@@ -9,7 +9,7 @@ export default {
   theme: {
     colors: {
       main: colors.rose[600],
-      white: colors.stone[50],
+      white: colors.stone[100],
       black: colors.stone[950],
     },
     extend: {
