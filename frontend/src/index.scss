@@ -11,8 +11,14 @@
 
 @layer utilities {
   .text-outline {
-    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+
+    &::before {
+      content: attr(data-content);
+      -webkit-text-stroke: 0;
+      position: absolute
+    }
 
     &-white {
       @extend .text-outline;

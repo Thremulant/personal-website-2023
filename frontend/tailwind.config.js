@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
     colors: {
+      ...colors,
       main: colors.rose[600],
       white: colors.stone[100],
       black: colors.stone[950],
@@ -19,5 +20,10 @@ export default {
       },
     },
   },
+  safelist: [
+    'text-outline-white',
+    'text-outline-main',
+    'text-outline-black',
+  ],
   plugins: [],
 }
