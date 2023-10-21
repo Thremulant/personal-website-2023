@@ -6,7 +6,7 @@ export const ErrorPage = () => {
   const error: any = useRouteError();
 
   return (
-    <Layout headline={`<span className="text-outline-main" data-content="OOPS!">OOPS!</span>`} sub={`Sorry, an unexpected error has occurred.`}>
+    <Layout headline={`<span className="text-outline-main" data-content="OOPS!">OOPS!</span>`} sub={`Sorry, an unexpected error has occurred.`} children={undefined} timeline={new Timeline}>
       <div id="error-page" className="text-white">
         <p>
           <i>{error.statusText || error.message}</i>
